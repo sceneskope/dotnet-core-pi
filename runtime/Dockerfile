@@ -5,7 +5,7 @@ RUN apt-get update \
         curl \
     && rm -rf /var/lib/apt/lists/*
 
-ENV DOTNET_DOWNLOAD_URL https://github.com/dotnet/core-setup/files/716356/dotnet-ubuntu.16.04-arm.1.2.0-beta-001291-00.tar.gz
+ENV DOTNET_DOWNLOAD_URL https://github.com/stevedesmond-ca/dotnet-arm/releases/download/${VERSION}/dotnet-ubuntu-arm.${VERSION}.tar.gz
 
 RUN curl -SL $DOTNET_DOWNLOAD_URL --output dotnet.tar.gz \
     && mkdir -p /usr/share/dotnet \
