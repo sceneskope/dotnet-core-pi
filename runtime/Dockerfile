@@ -1,5 +1,7 @@
 FROM sceneskope/armv7-dotnet-runtime-deps
 
+ARG VERSION
+
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         curl \
