@@ -1,4 +1,4 @@
-VERSION=`curl -s https://dotnetcli.blob.core.windows.net/dotnet/master/dnvm/latest.sharedfx.ubuntu.16.04.arm.version | tail -1`
+VERSION=`curl -s https://dotnetcli.blob.core.windows.net/dotnet/master/dnvm/latest.sharedfx.ubuntu.16.04.arm.version | tr -d '\r' | tail -1`
 
 docker build --build-arg VERSION=$VERSION -t sceneskope/armv7-dotnet .
 docker tag sceneskope/armv7-dotnet sceneskope/armv7-dotnet:$VERSION
