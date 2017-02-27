@@ -1,7 +1,6 @@
-FROM armv7/armhf-ubuntu:16.04
+FROM armhf/ubuntu:16.04
 
 RUN apt-get update \
-    && apt-get -y dist-upgrade \
 	&& apt-get install -y --no-install-recommends \
        ca-certificates \
 # .NET Core dependencies
