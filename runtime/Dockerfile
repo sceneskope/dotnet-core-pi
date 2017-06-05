@@ -5,7 +5,7 @@ RUN apt-get update \
         curl \
     && rm -rf /var/lib/apt/lists/*
 
-ARG VERSION
+ARG DOTNET_VERSION
 
 ENV DOTNET_DOWNLOAD_URL https://dotnetcli.blob.core.windows.net/dotnet/release/2.0.0/Binaries/$DOTNET_VERSION/dotnet-linux-arm.$DOTNET_VERSION-portable.tar.gz
 
