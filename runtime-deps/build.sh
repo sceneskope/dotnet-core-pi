@@ -1,1 +1,1 @@
-docker build -t sceneskope/armv7-dotnet-runtime-deps .
+docker build -t sceneskope/arm32v7-dotnet-runtime-deps .

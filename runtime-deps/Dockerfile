@@ -1,9 +1,20 @@
-FROM armhf/ubuntu:16.04
+FROM arm32v7/debian:jessie
 
 RUN apt-get update \
-	&& apt-get install -y --no-install-recommends \
-       ca-certificates \
+    && apt-get install -y --no-install-recommends \
+        ca-certificates \
+        \
 # .NET Core dependencies
-	libunwind8 libunwind8-dev gettext libicu-dev \
-    liblttng-ust-dev libcurl4-openssl-dev libssl-dev uuid-dev curl \
+        libc6 \
+        libcurl3 \
+        libgcc1 \
+        libgssapi-krb5-2 \
+        libicu52 \
+        liblttng-ust0 \
+        libssl1.0.0 \
+        libstdc++6 \
+        libunwind8 \
+        libuuid1 \
+        zlib1g \
     && rm -rf /var/lib/apt/lists/*
+    
