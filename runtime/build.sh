@@ -7,5 +7,5 @@ then
     exit -1
 fi
 
-docker tag sceneskope/arm32v7-dotnet sceneskope/arm32v7-dotnet:$VERSION
-docker push sceneskope/arm32v7-dotnet:$VERSION
+docker tag sceneskope/arm32v7-dotnet sceneskope/arm32v7-dotnet:$DOTNET_VERSION
+docker push sceneskope/arm32v7-dotnet:$DOTNET_VERSION
